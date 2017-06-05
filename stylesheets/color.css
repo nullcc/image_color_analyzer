@@ -1,0 +1,39 @@
+.img_btn {
+  float: left;
+}
+
+.myCanvas {
+  border: 1px solid lightgray;
+  float: left;
+}
+
+.result{
+  float: left;
+  margin-left: 50px;
+}
+
+.result_1{
+  max-width: 300px;
+}
+
+.color{
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+
+.color .span {
+  float: left;
+}
+
+.table {
+  border-right:1px solid lightgray;
+  border-bottom:1px solid lightgray;
+  border: 1px solid lightgray;
+}
+
+.table tr td {
+  border-left:1px solid lightgray;
+  border-top:1px solid lightgray;
+}
