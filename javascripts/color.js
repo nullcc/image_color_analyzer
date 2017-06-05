@@ -91,9 +91,9 @@ function showResult(colors) {
   var resultHtmls =
   "<table class='table' border='1' cellspacing='5' cellpadding='5'>"
     + "<tr>"
-      + "<th>颜色</th>"
+      + "<th>color</th>"
       + "<th>hex</th>"
-      + "<th>占比(%)</th>"
+      + "<th>percent(%)</th>"
     + "</tr>";
 
   colors.forEach(function(color){
@@ -125,6 +125,9 @@ function selectImage(index) {
     //   scaleFactor = 1;
     // }
     // ctx.scale(scaleFactor, scaleFactor);
+
+    document.getElementById("myCanvas").width = img.width;
+    document.getElementById("myCanvas").height = img.height;
     ctx.drawImage(img, 0, 0);
     handle(img);
   }
@@ -134,7 +137,7 @@ function selectImage(index) {
 function showImgBtn(imgs) {
   var html = "";
   for (var i = 0; i < imgs.length; i++) {
-    html += "<button class=\"img_btn\" onclick=\"selectImage(" + i + ")\">图片" + i + "</button>"
+    html += "<button class=\"img_btn\" onclick=\"selectImage(" + i + ")\">image " + i + "</button>"
   }
   document.getElementById("buttons").innerHTML = html;
 }
